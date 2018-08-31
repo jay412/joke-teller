@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import builditbigger.lib.Joker;
 
-public class JokerTest {
+class JokerTest {
     @Test
     public void test() {
         Joker joker = new Joker();

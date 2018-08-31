@@ -8,16 +8,15 @@
     tools:context=".JokeActivity">
 
     <TextView
-        android:id="@+id/instructions_text_view"
+        android:id="@+id/tv_joke"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click button below" />
+        android:layout_height="wrap_content" />
 
-    <Button
+    <!-- <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/instructions_text_view"
         android:onClick="tellJoke"
-        android:text="Click this button" />
+        android:text="Click this button" /> -->
 
 </RelativeLayout>

@@ -1,11 +1,9 @@
 package builditbigger.and_lib;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
-
-import builditbigger.lib.Joker;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class JokeActivity extends AppCompatActivity {
 
@@ -13,10 +11,12 @@ public class JokeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_joke);
-    }
 
-    public void tellJoke(View view) {
-        Joker myJoker = new Joker();
-        Toast.makeText(this, myJoker.getJoke(), Toast.LENGTH_SHORT).show();
+        TextView mJoke = findViewById(R.id.tv_joke);
+
+        Intent intent = getIntent();
+        if(intent != null) {
+            mJoke.setText(intent.getStringExtra("joke"));
+        }
     }
 }
