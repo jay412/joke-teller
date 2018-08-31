@@ -24,6 +24,6 @@ public class MainActivityTest {
     public void clickJokeButton_checkJoke(){
         onView(withId(R.id.btn_joke)).perform(click());
 
-        onView(withId(R.id.tv_joke)).check(matches(not(withText(""))));
+        onView(withId(R.id.tv_joke)).check(matches(not(null)));
     }
 }

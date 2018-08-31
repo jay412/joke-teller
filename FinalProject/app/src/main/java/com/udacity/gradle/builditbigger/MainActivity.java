@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
             try {
                 return myApiService.sayJoke().execute().getData();
             } catch (IOException e) {
-                return e.getMessage();
+                //return e.getMessage();
+                return null;
             }
         }
 
